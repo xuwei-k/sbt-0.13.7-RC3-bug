@@ -1,0 +1,9 @@
+language: scala
+
+script:
+  - cd $TEST_NAME && sbt test:compile
+
+env:
+  matrix:
+    - TEST_NAME=success
+    - TEST_NAME=failure
